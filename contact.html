@@ -1,0 +1,95 @@
+<html>
+<head>
+ <title>iWebsites.pl - Strona Twojego biznesu</title>
+ <meta charset="UTF-8">
+ <meta name="description" content="iWebsites.pl - Strony internetowe dla Ciebie i Twojego biznesu">
+ <meta name="keywords" content="iWebsites, strony, internetowe, domeny, usługi, projektowanie, programowanie, grafika, profesjonalne, tanie, budżetowe, tworzenie stron, dla firmy, prywatne">
+ <meta name="author" content="Mefiu">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="Stylesheet" type="text/css" href="style/default.css">
+ <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+ <script type="text/javascript" src="js/slideshow.js"></script>
+ <script type="text/javascript" src="js/menuslide.js"></script>
+ <script>
+	 function update() {
+	  if ($(window).scrollTop() > 95) {
+		$('#menubar-float').addClass('active');
+	  } else {
+		$('#menubar-float').removeClass('active');
+	  }
+	  
+	  if ($(window).scrollTop() > 40) {
+		$('#menubar-float-mobile').addClass('active');
+	  } else {
+		$('#menubar-float-mobile').removeClass('active');
+	  }
+	}
+	setInterval(update, 500);
+ </script>
+</head>
+<body onload="changeSlide();">
+
+
+ 
+<div class="right-menu">
+	<ul>
+		<a href="index.html"><li>Strona główna</li></a><hr />
+		<a href="index.html"><li>Zrealizowane projekty</li></a><hr />
+		<a href="index.html"><li>Nasz zespół</li></a><hr />
+		<a href="offer.html"><li>Oferta</li></a><hr />
+		<a href="contact.html"><li>Kontakt</li></a><hr />
+	</ul>
+</div>
+
+<div id="container">
+<div id="header">
+						<div id="menubar-mobile-logo-button">
+				<font id="menubar-mobile-slogan"></font>
+			</div>
+	<div id="logo">
+		<font id="ilogo">i</font><font id="logo-cont">Websites.pl</font>
+		<font id="slogan">Strona Twojego biznesu</font>
+	</div>
+</div>
+	<div id="menubar">
+		<li><a href="index.html">Strona główna</a></li>
+		<li><a href="index.html">Zrealizowane projekty</a></li>
+		<li><a href="index.html">Nasz zespół</a></li>
+		<li><a href="offer.html">Oferta</a></li>
+		<li><a href="contact.html"><font color="#FFCC7F">Kontakt</font></a></li>
+	</div>
+	<div id="menubar-float">
+		<li><a href="index.html">Strona główna</a></li>
+		<li><a href="index.html">Zrealizowane projekty</a></li>
+		<li><a href="index.html">Nasz zespół</a></li>
+		<li><a href="offer.html">Oferta</a></li>
+		<li><a href="contact.html"><font color="#FFCC7F">Kontakt</font></a></li>
+		<div id="minilogo" onclick="location.href='index.html'"><font id="mini-ilogo">i</font><font id="mini-logo-cont">Websites.pl</font></div>
+	</div>
+	<div id="menubar-float-mobile">
+		<div id="menubar-float-mobile-logo">
+			<font id="menubar-float-mobile-ilogo">i</font><font id="menubar-float-mobile-logo-cont">Websites.pl</font>
+			<font id="menubar-float-mobile-slogan">Strona Twojego biznesu</font>
+		</div>
+	</div>
+	<div id="content">
+		<div id="centered">
+			<div id="lower">
+					<p id="title">Kontakt z nami</p>
+				<div id="main">
+					<div id="mainbg"></div>
+						<div id="table-text">W celu przygotowania indywidualnej oferty prosimy o kontakt pod adresem<br><br><a href="mailto:oferta@iwebsites.pl?subject=Prośba%20o%20indywidualną%20ofertę%20-%20iWebsites.pl&body=Imię%20i%20nazwisko:%20%0D%0ANumer%20telefonu:%20%0D%0ANazwa%20firmy:%20%0D%0APozostałe%20informacje:%20%0D%0A%0D%0A"><b>oferta@iwebsites.pl</b></a><br><br><br>W wiadomości prosimy zawrzeć podstawowe informacje o firmie/projekcie, abyśmy już przy pierwszym kontakcie mogli przedstawić Ci wstępną ofertę, dopasowaną do Ciebie.</div>
+				</div>
+			</div>
+		</div>	
+	
+	</div>
+</div>
+<div id="footer">
+	Copyright &copy; 2017 iWebsites.pl
+</div>
+ <script>
+ $('.right-menu').sliiide({place: 'right', toggle: '#menubar-mobile-logo-button'});
+ </script>
+</body>
+</html>
